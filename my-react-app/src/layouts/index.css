@@ -1,30 +1,33 @@
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    padding: 0 60px;
-    height: 72px;
-    background: #085078;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #085078, #85D8CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-bottom: 42px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 60px;
+  height: 72px;
+  background: #085078;  /* fallback for old browsers */
+  background: linear-gradient(to right, #85d8ce, #085078);
+  background: linear-gradient(to right, #085078, #85d8ce);
+  box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
+  margin-bottom: 42px;
+}
 
+nav h1 {
+  font-size: 30px;
+  color: white;
 }
-nav h1{
-    font-size: 30px;
-    color: white;
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+nav ul li {
+  margin: 0 15px;
 }
-nav ul li{
-    margin: 0 15px;
-}
-nav ul li a{
-    color: white;
+
+nav ul li a {
+  color: white;
 }

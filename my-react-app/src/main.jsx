@@ -1,13 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-} from "react-router-dom";
-import { ChakraProvider } from '@chakra-ui/react'
+} from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 import Home from './pages/Home';
 import About from './pages/About';
 import User from './pages/Users';
@@ -16,31 +14,31 @@ import EditUser from './pages/EditUser';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home/>,
+    path: '/',
+    element: <Home />,
   },
   {
-    path: "/about",
-    element: <About/>,
+    path: '/about',
+    element: <About />,
   },
   {
-    path: "/users",
-    element: <User/>,
+    path: '/users',
+    element: <User />,
   },
   {
-    path: "/user_create",
-    element: <CreateUser/>,
+    path: '/user_create',
+    element: <CreateUser />,
   },
   {
-    path: "/user_edit/:id",
-    element: <EditUser/>,
+    path: '/user_edit/:id',
+    element: <EditUser />,
   },
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider>
       <RouterProvider router={router} />
     </ChakraProvider>
-  </React.StrictMode>
-)
+  </React.StrictMode>,
+);
